@@ -63,7 +63,9 @@
     {/each}
   </div>
   <div><!-- div wrapper for IE11 flex fix -->
+  {#if goods.isLoaded && !goods.isError}
     <SendBtn class="content__send-btn"/>
+  {/if}
   </div>
 </section>
 
