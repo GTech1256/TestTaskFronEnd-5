@@ -13,7 +13,6 @@
   "browserslist": "> 0.25%, not dead",
   "scripts": {
     "precommit": "yarn lint",
-    "prestart": "yarn docs",
     "start": "cross-env NODE_ENV=production pm2 start ./src/server/index.js",
     "dev:server": "nodemon ./src/server/index.js",
     "lint": "eslint ./src/ --ignore-path .gitignore --ignore-pattern internals/scripts",
@@ -29,7 +28,6 @@
     "postpublish": "git push --tags",
     "deploy": "sh ./deploy.sh",
     "docs": "apidoc -i src/server -o docs",
-    "postdocs": "opn docs/index.html",
     "build": "rollup -c rollup.config.js && rollup -c rollup.config.IE.js",
     "autobuild": "rollup -c -w",
     "dev:front": "run-p start:dev autobuild",
