@@ -1,6 +1,9 @@
 language: node_js
 node_js: '8.12.0'
 
+env:
+  - NODE_ENV=production PROD_DB_HOSTNAME=$PROD_DB_HOSTNAME PROD_DB_NAME=$PROD_DB_NAME PROD_DB_PASSWORD=$PROD_DB_PASSWORD PROD_DB_PORT=$PROD_DB_PORT PROD_DB_USERNAME=$PROD_DB_USERNAME
+
 cache:
   yarn: true
   directories:
