@@ -1,4 +1,4 @@
-# Тестовое
+# Тестовое &middot; [![Build Status](https://travis-ci.com/GTech1256/TestTaskFrontend-5.svg?branch=master)](https://travis-ci.com/GTech1256/TestTaskFrontend-5)
 
 ``` notepad
 Написать веб-приложение для подсчета суммы корзины в разных валютах.
