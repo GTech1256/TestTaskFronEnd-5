@@ -14,6 +14,6 @@ deploy:
   api_key: $HEROKU_AUTH_TOKEN
   on:
     repo: GTech1256/TestTaskFrontend-5
-  after_deploy:
-    - yarn
-    - yarn start
+after_deploy:
+  - yarn
+  - yarn start
