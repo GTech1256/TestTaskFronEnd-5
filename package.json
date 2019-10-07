@@ -1,5 +1,5 @@
 {
-  "name": "test-task-frond-end-5",
+  "name": "test-task-frontend-5",
   "version": "1.2.2",
   "description": "Svelte + Express + MongoDB",
   "author": "Roman Bakakin <pomah156@gmail.com>",
@@ -13,7 +13,7 @@
   "browserslist": "> 0.25%, not dead",
   "scripts": {
     "precommit": "yarn lint",
-    "start": "cross-env NODE_ENV=production pm2 start ./src/server/index.js",
+    "start": "cross-env NODE_ENV=production node ./src/server/index.js",
     "dev:server": "nodemon ./src/server/index.js",
     "lint": "eslint ./src/ --ignore-path .gitignore --ignore-pattern internals/scripts",
     "lint:fix": "yarn lint --fix",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:GTech1256/TestTaskFronEnd-5.git"
+    "url": "git@github.com:GTech1256/TestTaskFrontend-5.git"
   },
   "keywords": [
     "express",
@@ -81,6 +81,7 @@
     "passport-http-bearer": "^1.0.1",
     "passport-jwt": "4.0.0",
     "pm2": "^3.0.0",
+    "sass": "^1.23.0",
     "sirv-cli": "^0.4.4",
     "uuid": "^3.1.0",
     "winston": "^3.1.0"
