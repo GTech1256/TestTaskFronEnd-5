@@ -99,6 +99,7 @@ exports.connect = () => {
   mongoose.connect(getUrlForMongooseConnection(), {
     keepAlive: 1,
     useNewUrlParser: true,
+    useUnifiedTopology: true,
   });
   return mongoose.connection;
 };
