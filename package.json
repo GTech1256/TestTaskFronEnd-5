@@ -1,7 +1,7 @@
 {
-  "name": "express-rest-es2017-boilerplate",
+  "name": "test-task-frontend-5",
   "version": "1.2.2",
-  "description": "Express boilerplate for building RESTful APIs",
+  "description": "Svelte + Express + MongoDB",
   "author": "Roman Bakakin <pomah156@gmail.com>",
   "main": "src/server/index.js",
   "private": false,
@@ -13,8 +13,7 @@
   "browserslist": "> 0.25%, not dead",
   "scripts": {
     "precommit": "yarn lint",
-    "prestart": "yarn docs",
-    "start": "cross-env NODE_ENV=production pm2 start ./src/server/index.js",
+    "start": "cross-env NODE_ENV=production node ./src/server/index.js",
     "dev:server": "nodemon ./src/server/index.js",
     "lint": "eslint ./src/ --ignore-path .gitignore --ignore-pattern internals/scripts",
     "lint:fix": "yarn lint --fix",
@@ -29,7 +28,6 @@
     "postpublish": "git push --tags",
     "deploy": "sh ./deploy.sh",
     "docs": "apidoc -i src/server -o docs",
-    "postdocs": "opn docs/index.html",
     "build": "rollup -c rollup.config.js && rollup -c rollup.config.IE.js",
     "autobuild": "rollup -c -w",
     "dev:front": "run-p start:dev autobuild",
@@ -38,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:GTech1256/TestTaskFronEnd-5.git"
+    "url": "git@github.com:GTech1256/TestTaskFrontend-5.git"
   },
   "keywords": [
     "express",
@@ -83,6 +81,7 @@
     "passport-http-bearer": "^1.0.1",
     "passport-jwt": "4.0.0",
     "pm2": "^3.0.0",
+    "sass": "^1.23.0",
     "sirv-cli": "^0.4.4",
     "uuid": "^3.1.0",
     "winston": "^3.1.0"
