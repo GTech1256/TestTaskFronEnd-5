@@ -20,6 +20,11 @@
 
 ```
 
+## DEMO
+
+- [DEMO](http://goodes.eu-4.evennode.com/) until Oct 19, 2019
+- [DEMO without server](https://goodes.netlify.com/)
+
 ## Бойлерплейт
 
 Бойлерплейт для express взят тут https://github.com/danielfsousa/express-rest-es2017-boilerplate
